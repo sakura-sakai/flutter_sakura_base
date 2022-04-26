@@ -1,0 +1,11 @@
+name: 'Protect main branch'
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Protected branch update failed"
